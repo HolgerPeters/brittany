@@ -1,12 +1,12 @@
 name:                brittany
 version:             0.7.1.0
--- synopsis:            
--- description:         
+-- synopsis:
+-- description:
 license:             AllRightsReserved
 -- license-file:        LICENSE
 author:              Lennart Spitzner
 maintainer:          lsp@informatik.uni-kiel.de
--- copyright:           
+-- copyright:
 category:            Language
 build-type:          Simple
 extra-source-files:  ChangeLog.md
@@ -80,7 +80,7 @@ library {
     , lens
     , butcher >=0.2.0.0 && <0.3
     , yaml >=0.8.18 && <0.9
-    , extra >=1.4.10 && <1.5
+    , extra
     , uniplate >=1.6.12 && <1.7
     , strict >=0.3.2 && <0.4
     , monad-memo >=0.4.1 && <0.5
@@ -117,8 +117,8 @@ executable brittany
     buildable: True
   }
   main-is:             Main.hs
-  -- other-modules:       
-  -- other-extensions:    
+  -- other-modules:
+  -- other-extensions:
   build-depends:
     { brittany
     , base >=4.9 && <4.10
